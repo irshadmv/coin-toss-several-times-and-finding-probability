@@ -1,0 +1,14 @@
+import random
+
+def fun(x):
+  head=0
+  for i in range(0,x+1):
+    coin=random.randint(0,1)
+    if coin==1:
+      head=head+1
+  print('the probality of heads in {}term is {}'.format(x,head/x))
+fun(100)
+fun(500)
+fun(1000)
+fun(5000)
+fun(500000)
